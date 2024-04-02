@@ -1,0 +1,302 @@
+:root {
+    --color-fondo: #191919;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+    margin: auto;
+    min-height: 100vh;
+    background: var(--color-fondo);
+    font-family: "Margarine", sans-serif; /* Aplicar la tipografía Margarine al cuerpo del documento */
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Barra de navegación */
+.navbar {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background: #1a1a1a;
+}
+
+.link-group {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    color: #fff;}
+
+.link a{
+    color: #fff;
+    opacity: 5.0;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0 20px;
+    line-height: 80px;
+    transition: .5;
+    font-size: 20px;
+}
+
+.grupo a:hover, .grupo.activo {
+    opacity: 1;
+}
+
+/* Estilos para la Sección de Home */
+.home {
+    width: 100%;
+    height: 100vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative; 
+    overflow: hidden; /* Oculta el desbordamiento de la imagen */
+}
+
+/* Estilos para la imagen de fondo */
+.home-img {
+    width: 100%; 
+    min-height: 100vh;
+    object-fit: cover; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: -1; /* Sitúa la imagen detrás del contenido */
+}
+
+/* Estilos para el encabezado */
+.encabezado {
+    position: relative; /* Permite el posicionamiento absoluto */
+    z-index: 1; /* Sitúa el encabezado por encima de la imagen */
+    text-align: center;
+    color: #fff; 
+    font-size: 34px; 
+    font-weight: bold;
+}
+
+/* Estilos para la Sección de Projects */
+.projects {
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+    position: relative;
+    transition: 1s;
+    max-width: 1200px; /* Ajusta el tamaño máximo */
+    margin: auto; /* Centra horizontalmente */
+}
+
+/* Estilos para el encabezado de Projects */
+.encabezado-2 {
+    font-size: 34px;
+    background: #191919;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta automáticamente el número de columnas */
+    grid-gap: 20px;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.project-tarjeta {
+    height: 250px;
+    width: 250px; /* Tamaño cuadrado */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    overflow: hidden; 
+    border-radius: 10px; 
+}
+
+.project-img-1 {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+
+
+
+/* Estilos para la Sección de Projects */
+.about-me {
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+    position: relative;
+    transition: 1s;
+    max-width: 1200px; /* Ajusta el tamaño máximo */
+    margin: auto; /* Centra horizontalmente */
+}
+/* Estilos para el encabezado de Projects */
+.encabezado-3 {
+    font-size: 34px;
+    background: #191919b6;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    color: #fff;
+}
+.tex1{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+
+
+
+
+/* skills */
+.encabezado-4 {
+    font-size: 34px;
+    background: #191919;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.skills-container {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    color: #fff;
+}
+
+.skills-tarjeta {
+    position: relative;
+    text-align: center;
+}
+
+.skill-img {
+    display: block;
+    margin: auto;
+    height: 200px;
+    background-color: #1a1a1a
+}
+
+.skill-name {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 30px 0 20px;
+}
+
+.skills-info {
+    opacity: 0.5;
+    font-size: 18px;
+    line-height: 30px;
+}
+.skill-level {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 50%;
+    border: 10px solid ;
+} 
+.skills-tarjeta:nth-child(1) .skill-level{
+    background: #ff4f4f28;
+    background-color: #1eaa8540;
+    color: #1eaa85e2;
+}
+
+.skills-tarjeta:nth-child(2) .skill-level{
+    background: #ff4f4f28;
+    background-color: #be3c003a;
+    color: #be3c00;
+}
+
+.skills-tarjeta:nth-child(3) .skill-level{
+    background: #ff4f4f28;
+    background-color: #9b09094e;
+    color: #de0000da;
+}  
+
+
+
+/* seccion de contacto */
+
+.encabezado-5 {
+    text-align: center;
+    font-size: 34px;
+    color: #fff;
+}
+
+.contacto {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-form {
+    width: 80%;
+    max-width: 500px; /* Ajusta el ancho máximo según tus necesidades */
+    margin-top: 20px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #a81111bc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+::placeholder {
+    color: #e4e4e4c6;
+}
+
+#msg {
+    height: 120px; /* Reducido el tamaño del textarea para que se ajuste mejor */
+    resize: none;
+}
+
+.for-submit-btn {
+    background: #f41515b8;
+    color: #6f2e2e;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.for-submit-btn:hover {
+    background: #d80f0f;
+    color: #969696;
+}
+
